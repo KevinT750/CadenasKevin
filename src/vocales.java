@@ -10,7 +10,7 @@
 public class vocales {
 
     public static void main(String[] args) {
-        String palabra = "Juan Maria Pedro Luis";
+        String palabra = "EL DIA DE AYER MARGARITA JULIA Y JORGE SALIERON DE EXCURCION";
         int aC = 0;
         int eC = 0;
         int iC = 0;
@@ -28,14 +28,16 @@ public class vocales {
                 oC++;
             } else if (String.valueOf(palabra.charAt(i)).equalsIgnoreCase("u")) {
                 uC++;
-            } 
+            }
         }
-        
+        int totalVocales = aC + eC + iC + oC + uC;
 
         System.out.println("Hay " + aC + " 'A/a' en tu oracion\n"
                 + "Hay " + eC + " 'E/e' en tu oracion\n"
                 + "Hay " + iC + " 'I/i' en tu oracion\n"
                 + "Hay " + oC + " 'O/o' en tu oracion\n"
-                + "Hay " + uC + " 'U/u' en tu oracion\n");
+                + "Hay " + uC + " 'U/u' en tu oracion\n"
+                + "En total hay " + totalVocales + " De vocales");
+
     }
 }
